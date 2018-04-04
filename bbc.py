@@ -6,7 +6,8 @@ from selenium.webdriver.common.keys import Keys
 class PythonOrgSearch(unittest.TestCase):
 
     def setUp(self):
-	self.driver = webdriver.Firefox()
+	self.driver = webdriver.Firefox(executable_path='/var/lib/jenkins/workspace/first_app')
+	
     	
         
     def test_search_in_python_org(self):
