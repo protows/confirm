@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 class PythonOrgSearch(unittest.TestCase):
 
     def setUp(self):
-	self.driver = webdriver.Firefox(executable_path=r'/var/lib/jenkins/workspace/first_app/geckodriver')
+	self.driver = webdriver.Firefox()
 	
     	
         
