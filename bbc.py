@@ -11,8 +11,8 @@ class PythonOrgSearch(unittest.TestCase):
         
     def test_search_in_python_org(self):
         driver = self.driver
-    	driver.get("http://www.bbc.com/")
-    	elem = driver.find_element_by_id("orb-search-q")
+        driver.get("http://www.bbc.com/")
+        elem = driver.find_element_by_id("orb-search-q")
     	elem.clear()
     	elem.send_keys("Coral")
     	elem.send_keys(Keys.RETURN)
