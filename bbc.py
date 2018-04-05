@@ -13,13 +13,13 @@ class PythonOrgSearch(unittest.TestCase):
         driver = self.driver
         driver.get("http://www.bbc.com/")
         elem = driver.find_element_by_id("orb-search-q")
-    	elem.clear()
-    	elem.send_keys("Coral")
-    	elem.send_keys(Keys.RETURN)
-    	assert "Coral Products" not in driver.page_source
+        elem.clear()
+        elem.send_keys("Coral")
+        elem.send_keys(Keys.RETURN)
+        assert "Coral Products" not in driver.page_source
 
     def tearDown(self):
-    	self.driver.close()
+        self.driver.close()
 
 if __name__ == "__main__":
-	unittest.main()
+        unittest.main()
